@@ -31,6 +31,7 @@
 - **BreadcrumbListバリデーション** -- Google仕様に準拠し、最後のアイテム以外に `item`（URL）がない場合はエラーとして検出
 - **日本語対応** -- スキーマタイプ名やプロパティ名に日本語の説明を併記表示
 - **Markdownエクスポート** -- 「Markdown」ボタンでチェック結果をMarkdown形式でコピー。AIツールやチームへの共有に便利
+- **Googleリッチリザルトテスト連携** -- 「Rich Results Test」ボタンで現在のページURLを指定して[Googleリッチリザルトテスト](https://search.google.com/test/rich-results)を直接開く（公開URLのみ対応。ローカル環境では下記の「Rich Result用」コピーを利用）
 - **Googleリッチリザルトテスト用コピー** -- 「Rich Result用」ボタンで `<script type="application/ld+json">` タグごとコピー。[Googleリッチリザルトテスト](https://search.google.com/test/rich-results)のコード入力にそのまま貼り付けて検証できる
 - **Raw JSONコピー** -- 各JSON-LDブロックを個別にコピー可能
 

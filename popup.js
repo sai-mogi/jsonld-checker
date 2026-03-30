@@ -485,6 +485,7 @@ function render(results) {
     <div class="btn-group">
       <button class="md-btn" id="copy-md-btn">Markdown</button>
       <button class="md-btn" id="copy-rich-btn" style="background:#b45309;">Rich Result用</button>
+      <button class="md-btn" id="open-richtest-btn" style="background:#4285f4;">Rich Results Test</button>
     </div>
   `;
 
@@ -499,6 +500,12 @@ function render(results) {
         e.target.classList.remove('copied');
       }, 2000);
     });
+  });
+
+  // Rich Results Testを開くボタン
+  document.getElementById('open-richtest-btn').addEventListener('click', () => {
+    const testUrl = `https://search.google.com/test/rich-results?url=${encodeURIComponent(currentPageUrl)}`;
+    chrome.tabs.create({ url: testUrl });
   });
 
   // リッチリザルトテスト用コピーボタン
